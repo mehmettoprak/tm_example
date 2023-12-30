@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TürkMedya - Example</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</head>
+<body class="js-page-body">
+
+    <header class="header py-2">
+        <div class="header-top my-2">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col">
+                        <div class="left">
+                            <div class="weather font-size-13">
+                                <div>
+                                    <span class="title me-2">İSTANBUL</span>
+                                    <span class="value fw-bold">14°C / 10°C</span>
+                                </div>
+                                <div class="info fst-italic font-size-10">
+                                    Parçalı bulutlu, güneşli
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="center">
+                            <a href="">
+                                <div class="logo mx-auto">
+                                </div>
+                            </a>
+                            <div class="date text-center mt-1 font-size-10">
+                                30 Aralık 2023 Cumartesi / 18 CemaziyelAhir 1445
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col text-end">
+                        <div class="right">
+                            <div class="dark-mode-toggle mb-2 d-none d-sm-block js-dark-mode-toggle">
+                                <div class="dark-mode-toggle-content">
+                                    <div class="dark-mode-toggle-content">
+                                        <span class="dark-mode-toggle-text py-1 px-2 rounded-pill dark js-dark-mode-toggle-field" data-dark-mode-type="moon">
+                                            <img src="./assets/svg/moon.svg" class="me-1" alt="#"> Gece Modu
+                                        </span>
+                                        <span class="dark-mode-toggle-text py-1 px-2 rounded-pill light d-none js-dark-mode-toggle-field" data-dark-mode-type="sun">
+                                            <img src="./assets/svg/sun.svg" class="me-1" alt="#"> Gündüz Modu
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="prayer font-size-13">
+                                <div>
+                                    <span class="title me-1">İSTANBUL</span>
+                                    <span class="value fw-bold">01:16:17</span>
+                                </div>
+                                <div class="info fst-italic font-size-10">
+                                    Yatsı kalan süre
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav py-2">
+            <div class="container">
+                <ul class="d-none d-sm-flex justify-content-between align-items-center">
+                    <li><a href="#" class="text-dark fw-bold">SON DAKİKA</a></li>
+                    <li><a href="#" class="text-dark fw-bold">GÜNCEL</a></li>
+                    <li><a href="#" class="text-dark fw-bold">DÜNYA</a></li>
+                    <li><a href="#" class="text-dark fw-bold">EKONOMİ</a></li>
+                    <li><a href="#" class="text-dark fw-bold">SPOR</a></li>
+                    <li><a href="#" class="text-dark fw-bold">YAŞAM</a></li>
+                    <li><a href="#" class="text-dark fw-bold">BİLİM-TEKNOLOJİ</a></li>
+                    <li><a href="#" class="text-dark fw-bold">AÇIK GÖRÜŞ</a></li>
+                    <li><a href="#" class="text-dark fw-bold">YAZARLAR</a></li>
+                    <li><a href="#" class="text-dark fw-bold">SEYEHAT</a></li>
+                    <li class="sidebar-toggle">
+                        <a class="text-dark" data-bs-toggle="offcanvas" href="#mainOffcanvas" role="button" aria-controls="mainOffcanvas">
+                            <svg aria-hidden="true" fill="none" focusable="false" width="20" class="header__nav-icon icon icon-hamburger" viewBox="0 0 30 30">
+                                <path d="M1 19h22M1 12h22M1 5h22" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-widget d-none d-sm-block bg-dark py-2 text-white">
+            <div class="container d-flex">
+                <div class="left font-size-13">
+                    <div class="exchange">
+                        <div class="exchange-content d-flex">
+                            <div class="exchange-item d-flex me-3">
+                                <div class="exchange-item-title me-1">
+                                    DOLAR
+                                </div>
+                                <div class="exchange-item-value fw-bold">
+                                    29,5800
+                                </div>
+                            </div>
+                            <div class="exchange-item d-flex me-3">
+                                <div class="exchange-item-title me-1">
+                                    EURO
+                                </div>
+                                <div class="exchange-item-value fw-bold">
+                                    32,7816
+                                </div>
+                            </div>
+                            <div class="exchange-item d-flex me-3">
+                                <div class="exchange-item-title me-1">
+                                    ALTIN
+                                </div>
+                                <div class="exchange-item-value fw-bold">
+                                    1961.76
+                                </div>
+                            </div>
+                            <div class="exchange-item d-flex me-3">
+                                <div class="exchange-item-title me-1">
+                                    BIST100
+                                </div>
+                                <div class="exchange-item-value fw-bold">
+                                    7470.18
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right ms-auto d-flex">
+                    <ul class="d-flex font-size-13">
+                        <li class="mx-2"><a href="#" class="text-white" target="_blank">FOTO GALERİ</a></li>
+                        <li class="mx-2"><a href="#" class="text-white" target="_blank">VİDEO GALERİ</a></li>
+                        <li class="mx-2"><a href="#" class="text-white" target="_blank">CANLI YAYIN</a></li>
+                    </ul>
+                    <ul class="social-media d-flex font-size-13">
+                        <li class="ms-1">
+                            <a href="#" class="d-block text-center rounded-circle" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.6 409.61"><defs><style>.cls-1{fill:#000000;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M307.2,0H102.4C46.09,0,0,46.08,0,102.4V307.21c0,56.3,46.09,102.4,102.4,102.4H307.2c56.32,0,102.4-46.1,102.4-102.4V102.4C409.6,46.08,363.51,0,307.2,0Zm68.27,307.21a68.34,68.34,0,0,1-68.27,68.26H102.4a68.34,68.34,0,0,1-68.26-68.26V102.4A68.34,68.34,0,0,1,102.4,34.14H307.2a68.34,68.34,0,0,1,68.27,68.26V307.21Z"></path><circle class="cls-1" cx="315.75" cy="93.86" r="25.6"></circle><path class="cls-1" d="M204.8,102.4A102.41,102.41,0,1,0,307.2,204.8,102.39,102.39,0,0,0,204.8,102.4Zm0,170.68a68.27,68.27,0,1,1,68.27-68.28A68.28,68.28,0,0,1,204.8,273.08Z"></path></g></g></svg>
+                            </a>
+                        </li>
+                        <li class="ms-1">
+                            <a href="#" class="d-block text-center rounded-circle" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.6 409.61"><defs><style>.cls-1{fill:#000000;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M307.2,0H102.4C46.09,0,0,46.08,0,102.4V307.21c0,56.3,46.09,102.4,102.4,102.4H307.2c56.32,0,102.4-46.1,102.4-102.4V102.4C409.6,46.08,363.51,0,307.2,0Zm68.27,307.21a68.34,68.34,0,0,1-68.27,68.26H102.4a68.34,68.34,0,0,1-68.26-68.26V102.4A68.34,68.34,0,0,1,102.4,34.14H307.2a68.34,68.34,0,0,1,68.27,68.26V307.21Z"></path><circle class="cls-1" cx="315.75" cy="93.86" r="25.6"></circle><path class="cls-1" d="M204.8,102.4A102.41,102.41,0,1,0,307.2,204.8,102.39,102.39,0,0,0,204.8,102.4Zm0,170.68a68.27,68.27,0,1,1,68.27-68.28A68.28,68.28,0,0,1,204.8,273.08Z"></path></g></g></svg>
+                            </a>
+                        </li>
+                        <li class="ms-1">
+                            <a href="#" class="d-block text-center rounded-circle" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.6 409.61"><defs><style>.cls-1{fill:#000000;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M307.2,0H102.4C46.09,0,0,46.08,0,102.4V307.21c0,56.3,46.09,102.4,102.4,102.4H307.2c56.32,0,102.4-46.1,102.4-102.4V102.4C409.6,46.08,363.51,0,307.2,0Zm68.27,307.21a68.34,68.34,0,0,1-68.27,68.26H102.4a68.34,68.34,0,0,1-68.26-68.26V102.4A68.34,68.34,0,0,1,102.4,34.14H307.2a68.34,68.34,0,0,1,68.27,68.26V307.21Z"></path><circle class="cls-1" cx="315.75" cy="93.86" r="25.6"></circle><path class="cls-1" d="M204.8,102.4A102.41,102.41,0,1,0,307.2,204.8,102.39,102.39,0,0,0,204.8,102.4Zm0,170.68a68.27,68.27,0,1,1,68.27-68.28A68.28,68.28,0,0,1,204.8,273.08Z"></path></g></g></svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="search ms-4 cursor-pointer js-search-screen-toggle">
+                        <svg width="20" height="20" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.3467 8.20511C15.3798 7.56086 14.2435 7.21802 13.0817 7.22C11.5284 7.22264 10.0394 7.84088 8.941 8.93927C7.84261 10.0377 7.22437 11.5266 7.22172 13.08C7.21974 14.2418 7.56258 15.3781 8.20683 16.345C8.85107 17.3118 9.76774 18.0657 10.8407 18.5113C11.9138 18.9568 13.0948 19.0739 14.2344 18.8477C15.374 18.6215 16.4209 18.0622 17.2424 17.2407C18.064 16.4192 18.6232 15.3723 18.8494 14.2327C19.0756 13.0931 18.9585 11.912 18.513 10.839C18.0674 9.76602 17.3135 8.84935 16.3467 8.20511ZM9.15384 7.20151C10.3165 6.42465 11.6834 6.01 13.0817 6.01V6C14.9577 6.00265 16.756 6.74975 18.0816 8.07722C19.4072 9.40469 20.1517 11.204 20.1517 13.08C20.1517 14.4783 19.7371 15.8452 18.9602 17.0079C18.8173 17.2218 18.6633 17.4269 18.4991 17.6227C18.506 17.629 18.5128 17.6355 18.5195 17.6422L22.5695 21.6922C22.8058 21.9285 22.8058 22.3115 22.5695 22.5478C22.3333 22.7841 21.9502 22.7841 21.7139 22.5478L17.6639 18.4978C17.6578 18.4917 17.6519 18.4855 17.6461 18.4792C17.0916 18.9479 16.4653 19.331 15.7873 19.6118C14.4954 20.1469 13.0739 20.287 11.7024 20.0142C10.331 19.7414 9.07123 19.068 8.08248 18.0792C7.09372 17.0905 6.42037 15.8307 6.14757 14.4593C5.87477 13.0878 6.01478 11.6663 6.54989 10.3744C7.085 9.08255 7.99119 7.97837 9.15384 7.20151Z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="breaking-news d-none d-sm-block py-2">
+            <div class="container">
+                <div class="d-flex position-relative">
+                    <div class="breaking-news-title lh-1 text-white">
+                        <span class="title fw-bold">SON <span class="d-block fw-bold">DAKİKA</span></span>
+                    </div>
+
+                    <div class="breaking-news-content">
+                        <div class="swiper pt-1 js-swiper-container" id="breaking-news-slider" data-swiper-type="breaking-news-slider">
+                            <div class="swiper-wrapper">
+                                <div class="breaking-news-item swiper-slide">
+                                    <a href="#" class="text-white d-flex align-items-center" target="_blank">
+                                        <span class="time fw-bold p-1 me-2">17:30</span>
+                                        <span class="title">Üstad Necip Fazıl ve poetikasına dair</span>
+                                    </a>
+                                </div>
+                                <div class="breaking-news-item swiper-slide">
+                                    <a href="#" class="text-white d-flex align-items-center" target="_blank">
+                                        <span class="time fw-bold p-1 me-2">17:12</span>
+                                        <span class="title">‘Sabır Taşı' CHP'yi nasıl çatlattı?</span>
+                                    </a>
+                                </div>
+                                <div class="breaking-news-item swiper-slide">
+                                    <a href="#" class="text-white d-flex align-items-center" target="_blank">
+                                        <span class="time fw-bold p-1 me-2">17:14</span>
+                                        <span class="title">Şarkısı dudaklarda!</span>
+                                    </a>
+                                </div>
+                                <div class="breaking-news-item swiper-slide">
+                                    <a href="#" class="text-white d-flex align-items-center" target="_blank">
+                                        <span class="time fw-bold p-1 me-2">17:30</span>
+                                        <span class="title">Üstad Necip Fazıl ve poetikasına dair</span>
+                                    </a>
+                                </div>
+                                <div class="breaking-news-item swiper-slide">
+                                    <a href="#" class="text-white d-flex align-items-center" target="_blank">
+                                        <span class="time fw-bold p-1 me-2">17:12</span>
+                                        <span class="title">‘Sabır Taşı' CHP'yi nasıl çatlattı?</span>
+                                    </a>
+                                </div>
+                                <div class="breaking-news-item swiper-slide">
+                                    <a href="#" class="text-white d-flex align-items-center" target="_blank">
+                                        <span class="time fw-bold p-1 me-2">17:14</span>
+                                        <span class="title">Şarkısı dudaklarda!</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start main-offcanvas" tabindex="-1" id="mainOffcanvas" aria-labelledby="mainOffcanvasLabel">
+            <div class="offcanvas-header">
+                <a href="#" class="mx-auto">
+                    <div class="logo"></div>
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body mx-0 px-0">
+                <ul>
+                    <li><a href="#" class="text-dark fw-semibold d-block py-2 px-3">SON DAKİKA</a></li>
+                    <li><a href="#" class="text-dark fw-semibold d-block py-2 px-3">GÜNCEL</a></li>
+                    <li><a href="#" class="text-dark fw-semibold d-block py-2 px-3">DÜNYA</a></li>
+                    <li><a href="#" class="text-dark fw-semibold d-block py-2 px-3">EKONOMİ</a></li>
+                    <li><a href="#" class="text-dark fw-semibold d-block py-2 px-3">SPOR</a></li>
+                    <li><a href="#" class="text-dark fw-semibold d-block py-2 px-3">YAŞAM</a></li>
+                    <li><a href="#" class="text-dark fw-semibold d-block py-2 px-3">BİLİM-TEKNOLOJİ</a></li>
+                    <li><a href="#" class="text-dark fw-semibold d-block py-2 px-3">AÇIK GÖRÜŞ</a></li>
+                    <li><a href="#" class="text-dark fw-semibold d-block py-2 px-3">YAZARLAR</a></li>
+                    <li><a href="#" class="text-dark fw-semibold d-block py-2 px-3">SEYEHAT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="search-screen js-search-screen" class="fade">
+            <button type="button" class="btn-close btn-close-white js-close-search-screen" aria-label="Close"></button>
+
+            
+            <div class="search-content">
+                <form action="#" method="get">
+                    <div class="input-group">
+                        <input type="text" class="form-control px-0" placeholder="Haber ara">
+                        <button class="btn px-0" type="submit">
+                            <svg width="50" height="50" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.3467 8.20511C15.3798 7.56086 14.2435 7.21802 13.0817 7.22C11.5284 7.22264 10.0394 7.84088 8.941 8.93927C7.84261 10.0377 7.22437 11.5266 7.22172 13.08C7.21974 14.2418 7.56258 15.3781 8.20683 16.345C8.85107 17.3118 9.76774 18.0657 10.8407 18.5113C11.9138 18.9568 13.0948 19.0739 14.2344 18.8477C15.374 18.6215 16.4209 18.0622 17.2424 17.2407C18.064 16.4192 18.6232 15.3723 18.8494 14.2327C19.0756 13.0931 18.9585 11.912 18.513 10.839C18.0674 9.76602 17.3135 8.84935 16.3467 8.20511ZM9.15384 7.20151C10.3165 6.42465 11.6834 6.01 13.0817 6.01V6C14.9577 6.00265 16.756 6.74975 18.0816 8.07722C19.4072 9.40469 20.1517 11.204 20.1517 13.08C20.1517 14.4783 19.7371 15.8452 18.9602 17.0079C18.8173 17.2218 18.6633 17.4269 18.4991 17.6227C18.506 17.629 18.5128 17.6355 18.5195 17.6422L22.5695 21.6922C22.8058 21.9285 22.8058 22.3115 22.5695 22.5478C22.3333 22.7841 21.9502 22.7841 21.7139 22.5478L17.6639 18.4978C17.6578 18.4917 17.6519 18.4855 17.6461 18.4792C17.0916 18.9479 16.4653 19.331 15.7873 19.6118C14.4954 20.1469 13.0739 20.287 11.7024 20.0142C10.331 19.7414 9.07123 19.068 8.08248 18.0792C7.09372 17.0905 6.42037 15.8307 6.14757 14.4593C5.87477 13.0878 6.01478 11.6663 6.54989 10.3744C7.085 9.08255 7.99119 7.97837 9.15384 7.20151Z"></path></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="ads-banner text-center my-3 d-none d-sm-block">
+        <a href="#">
+            <img src="./assets/img/banner-2.jpeg" alt="#">
+        </a>
+    </div>
+
+    <main>
+        <section class="section main-slider">
+            <div class="container">
+                <div class="swiper js-swiper-container" id="main-slider" data-swiper-type="main-slider">
+                    <div class="swiper-wrapper">
+                        <div class="main-slider-item swiper-slide js-swiper-slide-item"
+                            data-slide-title="AK Parti'nin yerel seçim sloganı belli oldu! Adaylar ne zaman açıklanacak?"
+                            data-slide-small-image="./assets/img/demo-banner-1-1.webp">
+                            <a href="#" target="_blank" class="position-relative">
+                                <div class="image">
+                                    <img src="./assets/img/demo-banner-1.webp" alt="#">
+                                </div>
+                                <div class="content">
+                                    <p class="title fw-bold p-4 m-0 text-white">AK Parti'nin yerel seçim sloganı belli oldu! Adaylar ne zaman açıklanacak?</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-slider-item swiper-slide js-swiper-slide-item"
+                            data-slide-title="MİT'ten Kamışlı'da PKK'ya nokta operasyonu! Etkisiz hale getirildi"
+                            data-slide-small-image="./assets/img/demo-banner-2-2.webp">
+                            <a href="#" target="_blank" class="position-relative">
+                                <div class="image">
+                                    <img src="./assets/img/demo-banner-2.webp" alt="#">
+                                </div>
+                                <div class="content">
+                                    <p class="title fw-bold p-4 m-0 text-white">MİT'ten Kamışlı'da PKK'ya nokta operasyonu! Etkisiz hale getirildi</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-slider-item swiper-slide js-swiper-slide-item"
+                            data-slide-title="FETÖ'nün 'Süper Kupa' yalanına sarılan CHP'nin 'Atatürk' siyaseti deşifre oldu!"
+                            data-slide-small-image="./assets/img/demo-banner-3-3.webp">
+                            <a href="#" target="_blank" class="position-relative">
+                                <div class="image">
+                                    <img src="./assets/img/demo-banner-3.webp" alt="#">
+                                </div>
+                                <div class="content">
+                                    <p class="title fw-bold p-4 m-0 text-white">FETÖ'nün 'Süper Kupa' yalanına sarılan CHP'nin 'Atatürk' siyaseti deşifre oldu!</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-slider-item swiper-slide js-swiper-slide-item"
+                            data-slide-title="MİT'ten Kamışlı'da PKK'ya nokta operasyonu! Etkisiz hale getirildi"
+                            data-slide-small-image="./assets/img/demo-banner-2-2.webp">
+                            <a href="#" target="_blank" class="position-relative">
+                                <div class="image">
+                                    <img src="./assets/img/demo-banner-2.webp" alt="#">
+                                </div>
+                                <div class="content">
+                                    <p class="title fw-bold p-4 m-0 text-white">MİT'ten Kamışlı'da PKK'ya nokta operasyonu! Etkisiz hale getirildi</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-slider-item swiper-slide js-swiper-slide-item"
+                            data-slide-title="MİT'ten Kamışlı'da PKK'ya nokta operasyonu! Etkisiz hale getirildi"
+                            data-slide-small-image="./assets/img/demo-banner-2-2.webp">
+                            <a href="#" target="_blank" class="position-relative">
+                                <div class="image">
+                                    <img src="./assets/img/demo-banner-2.webp" alt="#">
+                                </div>
+                                <div class="content">
+                                    <p class="title fw-bold p-4 m-0 text-white">MİT'ten Kamışlı'da PKK'ya nokta operasyonu! Etkisiz hale getirildi</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination d-none d-sm-flex bg-dark js-swiper-pagination">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
